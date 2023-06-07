@@ -1,0 +1,49 @@
+<div>
+  <mat-toolbar color="primary">
+    <span>PasswordGenrator </span>
+    <span class="spacer"></span>
+    <button mat-icon-button (click)="toggleNavigation()">
+      <mat-icon>list</mat-icon>
+    </button>
+    <ul class="navigation" [ngClass]="{ show: showNavigation }">
+      <button
+        mat-icon-button
+        class="close-button"
+        *ngIf="showNavigation"
+        (click)="toggleNavigation()"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+      <a mat-button routerLink="/">Home</a>
+      <a
+        mat-button
+        href="https://www.linkedin.com/in/omkar-dhapte-103380226"
+        target="_blank"
+        >LinkedIn</a
+      >
+      <a
+        mat-button
+        href="https://github.com/your-github-username"
+        target="_blank"
+        >GitHub</a
+      >
+    </ul>
+  </mat-toolbar>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col text-center fading">
+      <span>Generate a Strong Password</span>
+      <input type="text" [value]="password" readonly />
+      <button class="copyPassword" (click)="copyToClipboard()">
+        <mat-icon>filter_none</mat-icon>
+      </button>
+      <button class="generatePassword" (click)="generatePassword()">
+        Generate Password
+      </button>
+    </div>
+  </div>
+</div>
+<mat-toolbar color="primary" class="footer">
+  <span>&copy; 2023 Your Company</span>
+</mat-toolbar>
