@@ -1,0 +1,17 @@
+[debug] [2023-08-14T23:16:13.187Z] ----------------------------------------------------------------------
+[debug] [2023-08-14T23:16:13.189Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\OMKAR\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-14T23:16:13.189Z] CLI Version:   12.4.7
+[debug] [2023-08-14T23:16:13.190Z] Platform:      win32
+[debug] [2023-08-14T23:16:13.190Z] Node Version:  v18.15.0
+[debug] [2023-08-14T23:16:13.196Z] Time:          Tue Aug 15 2023 04:46:13 GMT+0530 (India Standard Time)
+[debug] [2023-08-14T23:16:13.196Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-14T23:16:13.266Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-14T23:16:13.267Z] > authorizing via signed-in user (omkardhapte99@gmail.com)
+[debug] [2023-08-14T23:16:13.267Z] [iam] checking project ironkeygenerator for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-14T23:16:13.269Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ironkeygenerator:testIamPermissions [none]
+[debug] [2023-08-14T23:16:13.270Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ironkeygenerator:testIamPermissions x-goog-quota-user=projects/ironkeygenerator
+[debug] [2023-08-14T23:16:13.270Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ironkeygenerator:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-14T23:16:13.768Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ironkeygenerator:testIamPermissions 200
+[debug] [2023-08-14T23:16:13.768Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ironkeygenerator:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-14T23:16:13.769Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ironkeygenerator [none]
