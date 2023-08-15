@@ -11,10 +11,10 @@ export class AppComponent {
   value = 15;
   max = 50;
   min = 0;
-  symbols: boolean = false;
-  number: boolean = false;
-  smallletter: boolean = false;
-  captiel: boolean = false
+  symbols: boolean = true;
+  number: boolean = true;
+  smallletter: boolean = true;
+  captiel: boolean = true
   mobileview: boolean = false
   generatedPassword!: string;
 

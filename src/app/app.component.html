@@ -13,14 +13,12 @@
     </div>
   </div>
   <div class="w-full h-[600px] bg-img bg-cover bg-center">
-    <span class="flex item-center justify-center pt-[190px] ptmobile text-white header-text font-extrabold">Random
-      Password
-      Generator
+    <span
+      class="flex items-center justify-center py-10 px-4 sm:py-16 sm:px-6 text-white text-center font-extrabold text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+      Random Password Generator
     </span>
-    <p class="flex item-center justify-center pt-[20px] text-white text-xl">Create strong and secure passwords to keep
-      your
-      account safe
-      online.
+    <p class="flex item-center justify-center pt-[20px] text-white text-xl">
+      Create strong and secure passwords to keep your account safe online.
     </p>
     <div class="pt-[50px] flex item-center justify-center mobile-copy">
       <input type="text" [value]="generatedPassword" class="rounded-3xl inputbar mx-3 px-4" />
@@ -28,16 +26,18 @@
         Copy
       </button>
     </div>
-    <div class="flex item-center justify-center px-5 pt-5 mobile-copy" style="font-size: 21px;">
-      <div class="flex bg-success bg-purple-800 text-center item-center pt-4">
-        <p class="px-4 text-white">
+    <div class="flex item-center justify-center px-5 pt-5" style="font-size: 21px;">
+      <div class="flex text-center item-center pt-4 mobile-copy">
+        <p class="px-4 text-white pt-3">
           Password length:
           <span class="">{{slider.value}}</span>
         </p>
-        <div>
+        <div class="bg-purple-800 w-[300px]">
+          <!-- <button mat-fab color="warn"> <mat-icon>add</mat-icon></button> -->
           <mat-slider class="" [max]="max" [min]="min">
             <input matSliderThumb [(ngModel)]="value" #slider (click)="generatePassword()">
           </mat-slider>
+          <!-- <button mat-fab color="warn"><mat-icon>remove</mat-icon></button> -->
         </div>
       </div>
     </div>
@@ -52,6 +52,51 @@
       </div>
     </div>
   </div>
+  <div class="bg-cyan-700 py-7">
+    <div class="flex justify-center item-center py-5">
+      <h1
+        class="flex items-center justify-center py-10 px-4 sm:py-16 sm:px-6 text-white text-center font-extrabold text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl textSize">
+        What makes a password strong ?</h1>
+    </div>
+    <div class="flex px-24 mobile-copy">
+      <div class="flex-1 p-6 rounded-lg overflow-hidden text-white">
+        <div class="flex items-center icon-center">
+          <mat-icon class="iconSize">straighten</mat-icon>
+        </div>
+        <div>
+          <h3 class="text-xl bolder mb-2">Long</h3>
+          <p class="leading-normal">The longer a password, the more secure it is. A strong password should be at least
+            10 characters
+            long.</p>
+        </div>
+      </div>
+      <div class="flex-1 p-6 ml-6 rounded-lg overflow-hidden text-white">
+        <div class="flex items-center icon-center">
+          <mat-icon class="iconSize">security</mat-icon>
+        </div>
+        <div>
+          <h3 class="text-xl bolder mb-2">Complex</h3>
+          <p class="leading-normal">Strong passwords use a combination of letters, numbers, cases, and symbols to form
+            an
+            unpredictable string
+            of characters that doesn't resemble words or names.</p>
+        </div>
+      </div>
+      <div class="flex-1 p-6 ml-6 rounded-lg overflow-hidden text-white">
+        <div class="flex items-center icon-center">
+          <mat-icon class="iconSize">fingerprint</mat-icon>
+        </div>
+        <div>
+          <h3 class="text-xl bolder mb-2">Unique</h3>
+          <p class="leading-normal">A strong password should be unique to each account to reduce vulnerability in the
+            event of a hack.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
   <div class="footer py-3">
     <span class="flex justify-center text-lg">&copy; 2023 Omkar Dhapte</span>
   </div>
+</div>
